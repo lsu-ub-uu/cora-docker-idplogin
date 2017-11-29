@@ -1,0 +1,4 @@
+<Context>
+	<Parameter name="gatekeeperURL" value="http://gatekeeper:8080/gatekeeper/"
+		override="false" />
+</Context>

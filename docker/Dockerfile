@@ -1,19 +1,18 @@
 FROM  tomcat:jre8-alpine
 
-COPY /apptokenverifier.war /usr/local/tomcat/webapps/apptokenverifier.war
-COPY /apptokenverifier.xml /usr/local/tomcat/conf/Catalina/localhost/apptokenverifier.xml
-COPY /basicstorage.jar /usr/local/tomcat/lib/basicstorage.jar
+COPY /idplogin.war /usr/local/tomcat/webapps/idplogin.war
+COPY /idplogin.xml /usr/local/tomcat/conf/Catalina/localhost/idplogin.xml
 
 
 #build with:
 #maven build
 
 #start on development with:
-#docker run --net=cora --volumes-from gatekeeper:ro -p 8082:8080 --name apptokenverifier --link gatekeeper:gatekeeper -d  apptokenverifier
+#docker run --net=cora --volumes-from gatekeeper:ro -p 8082:8080 --name idplogin --link gatekeeper:gatekeeper -d  idplogin
 
 
 #start on build server with:
-#docker run --net=cora-test --volumes-from gatekeeper-test --name apptokenverifier-test --link gatekeeper-test:gatekeeper -d  apptokenverifier
+#docker run --net=cora-test --volumes-from gatekeeper-test --name idplogin-test --link gatekeeper-test:gatekeeper -d  idplogin
 
 #start on external with:
-#docker run --network=cora --name apptokenverifier --link gatekeeper:gatekeeper -d  apptokenverifier
+#docker run --network=cora --name idplogin --link gatekeeper:gatekeeper -d  idplogin

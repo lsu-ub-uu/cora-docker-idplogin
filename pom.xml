@@ -1,4 +1,4 @@
-<!-- ~ Copyright 2015 Uppsala University Library ~ ~ This file is part of 
+<!-- ~ Copyright 2017 Uppsala University Library ~ ~ This file is part of 
 	Cora. ~ ~ Cora is free software: you can redistribute it and/or modify ~ 
 	it under the terms of the GNU General Public License as published by ~ the 
 	Free Software Foundation, either version 3 of the License, or ~ (at your 
@@ -18,20 +18,19 @@
 		<version>0.6-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>cora-docker-apptokenverifier</artifactId>
+	<artifactId>cora-docker-idplogin</artifactId>
 	<packaging>pom</packaging>
-	<version>0.3-SNAPSHOT</version>
-	<name>apptokenverifier docker</name>
+	<version>0.1-SNAPSHOT</version>
+	<name>idplogin docker</name>
 
 	<properties>
-		<apptokenverifier.version>0.3-SNAPSHOT</apptokenverifier.version>
-		<basicstorage.version>0.5-SNAPSHOT</basicstorage.version>
+		<idplogin.version>0.1-SNAPSHOT</idplogin.version>
 	</properties>
 
 	<scm>
-		<connection>scm:git:https://git.epc.ub.uu.se/epc/cora-docker-apptokenverifier.git</connection>
-		<developerConnection>scm:git:https://git.epc.ub.uu.se/epc/cora-docker-apptokenverifier.git</developerConnection>
-		<url>https://git.epc.ub.uu.se/epc/cora-docker-apptokenverifier.git</url>
+		<connection>scm:git:https://git.epc.ub.uu.se/epc/cora-docker-idplogin.git</connection>
+		<developerConnection>scm:git:https://git.epc.ub.uu.se/epc/cora-docker-idplogin.git</developerConnection>
+		<url>https://git.epc.ub.uu.se/epc/cora-docker-idplogin.git</url>
 	</scm>
 
 	<repositories>
@@ -52,15 +51,9 @@
 	<dependencies>
 		<dependency>
 			<groupId>se.uu.ub.cora</groupId>
-			<artifactId>apptokenverifier</artifactId>
-			<version>${apptokenverifier.version}</version>
+			<artifactId>idplogin</artifactId>
+			<version>${idplogin.version}</version>
 			<type>war</type>
-			<scope>compile</scope>
-		</dependency>
-		<dependency>
-			<groupId>se.uu.ub.cora</groupId>
-			<artifactId>basicstorage</artifactId>
-			<version>${basicstorage.version}</version>
 			<scope>compile</scope>
 		</dependency>
 	</dependencies>
@@ -103,7 +96,7 @@
 					</execution>
 				</executions>
 				<configuration>
-					<imageName>apptokenverifier</imageName>
+					<imageName>idplogin</imageName>
 					<dockerDirectory>docker</dockerDirectory>
 					<resources>
 					</resources>
