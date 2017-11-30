@@ -1,5 +1,6 @@
 FROM  tomcat:jre8-alpine
 
+COPY server.xml /usr/local/tomcat/conf/
 COPY /idplogin.war /usr/local/tomcat/webapps/idplogin.war
 COPY /idplogin.xml /usr/local/tomcat/conf/Catalina/localhost/idplogin.xml
 
