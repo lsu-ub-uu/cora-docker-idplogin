@@ -1,6 +1,6 @@
 <Context>
 	<Parameter name="gatekeeperURL" value="http://gatekeeper:8080/gatekeeper/"
 		override="false" />
-			<Parameter name="idpLoginPublicPathToSystem" value="/systemone/idplogin/rest/"
+			<Parameter name="idpLoginPublicPathToSystem" value="${idplogin.public.path.to.system}"
 		override="false" />
 </Context>
