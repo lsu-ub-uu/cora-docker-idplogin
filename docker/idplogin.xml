@@ -1,6 +1,8 @@
 <Context>
 	<Parameter name="gatekeeperURL" value="http://gatekeeper:8080/gatekeeper/"
 		override="false" />
-			<Parameter name="idpLoginPublicPathToSystem" value="${idplogin.public.path.to.system}"
+	<Parameter name="mainSystemDomain" value="${main.system.domain}"
+		override="false" />
+	<Parameter name="tokenLogoutURL" value="${token.logout.url}"
 		override="false" />
 </Context>
