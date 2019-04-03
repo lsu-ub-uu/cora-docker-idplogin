@@ -22,18 +22,18 @@
 	<parent>
 		<groupId>se.uu.ub.cora</groupId>
 		<artifactId>cora-parent</artifactId>
-		<version>0.8.6</version>
+		<version>0.9.0</version>
 	</parent>
 
 	<artifactId>cora-docker-idplogin</artifactId>
 	<packaging>pom</packaging>
-	<version>0.4-SNAPSHOT</version>
+	<version>1.0-SNAPSHOT</version>
 	<name>idplogin docker</name>
 
 	<properties>
 		<outputDirectory>${project.build.directory}/docker2</outputDirectory>
 
-		<idplogin.version>0.3.0</idplogin.version>
+		<idplogin.version>1.0.0</idplogin.version>
 	</properties>
 
 	<scm>
@@ -91,8 +91,6 @@
 							<overWriteReleases>true</overWriteReleases>
 							<overWriteSnapshots>true</overWriteSnapshots>
 							<overWriteIfNewer>true</overWriteIfNewer>
-							<excludeTransitive>true</excludeTransitive>
-							<stripVersion>true</stripVersion>
 						</configuration>
 					</execution>
 				</executions>
