@@ -1,4 +1,4 @@
-FROM  tomcat:9.0-jre11-slim
+FROM  tomcat:jdk12-adoptopenjdk-openj9
 
 COPY server.xml /usr/local/tomcat/conf/
 COPY /idplogin*.war /usr/local/tomcat/webapps/idplogin.war
