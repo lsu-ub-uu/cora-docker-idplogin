@@ -32,9 +32,7 @@
 
 	<properties>
 		<outputDirectory>${project.build.directory}/docker2</outputDirectory>
-
-		<idplogin.version>2.2.0</idplogin.version>
-		<logger.version>2.0.0</logger.version>
+		<idplogin.version>2.3.0</idplogin.version>
 	</properties>
 
 	<scm>
@@ -51,12 +49,6 @@
 			<version>${idplogin.version}</version>
 			<type>war</type>
 			<scope>compile</scope>
-		</dependency>
-		<dependency>
-			<groupId>se.uu.ub.cora</groupId>
-			<artifactId>logger</artifactId>
-			<version>${logger.version}</version>
-			<scope>runtime</scope>
 		</dependency>
 	</dependencies>
 
