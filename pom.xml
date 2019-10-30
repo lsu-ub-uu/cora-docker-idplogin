@@ -33,7 +33,7 @@
 	<properties>
 		<outputDirectory>${project.build.directory}/docker2</outputDirectory>
 
-		<idplogin.version>1.0.0</idplogin.version>
+		<idplogin.version>2.2.0</idplogin.version>
 	</properties>
 
 	<scm>
