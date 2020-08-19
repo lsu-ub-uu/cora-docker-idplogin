@@ -22,7 +22,7 @@
 	<parent>
 		<groupId>se.uu.ub.cora</groupId>
 		<artifactId>cora-parent</artifactId>
-		<version>1.0.2</version>
+		<version>1.1.1</version>
 	</parent>
 
 	<artifactId>cora-docker-idplogin</artifactId>
@@ -32,7 +32,7 @@
 
 	<properties>
 		<outputDirectory>${project.build.directory}/docker2</outputDirectory>
-		<idplogin.version>2.4.0</idplogin.version>
+		<idplogin.version>2.5.0</idplogin.version>
 	</properties>
 
 	<scm>

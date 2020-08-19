@@ -1,4 +1,4 @@
-FROM  tomcat:9.0.27-jdk12-adoptopenjdk-hotspot
+FROM  tomcat:9.0.37-jdk14-openjdk-buster
 
 COPY server.xml /usr/local/tomcat/conf/
 COPY /idplogin*.war /usr/local/tomcat/webapps/idplogin.war
