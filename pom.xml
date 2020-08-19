@@ -33,6 +33,7 @@
 	<properties>
 		<outputDirectory>${project.build.directory}/docker2</outputDirectory>
 		<idplogin.version>2.5.0</idplogin.version>
+		<maven-dependency-plugin.version>3.1.2</maven-dependency-plugin.version>
 	</properties>
 
 	<scm>
@@ -77,7 +78,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-dependency-plugin</artifactId>
-				<version>3.1.1</version>
+				<version>${maven-dependency-plugin.version}</version>
 				<executions>
 					<execution>
 						<id>copy-dependencies</id>
