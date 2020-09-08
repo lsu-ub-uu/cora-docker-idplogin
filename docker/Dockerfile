@@ -1,4 +1,5 @@
-FROM cora-docker-tomcat:1.0-SNAPSHOT
+ARG CORA_DOCKER_VERSION
+FROM cora-docker-tomcat:${CORA_DOCKER_VERSION}
 
 COPY server.xml /usr/local/tomcat/conf/
 COPY /idplogin*.war /usr/local/tomcat/webapps/idplogin.war
