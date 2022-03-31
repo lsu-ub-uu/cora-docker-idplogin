@@ -32,11 +32,11 @@
 
 	<properties>
 		<outputDirectory>${project.build.directory}/docker2</outputDirectory>
-		<maven-dependency-plugin.version>3.2.0</maven-dependency-plugin.version>
+		<maven-dependency-plugin.version>3.3.0</maven-dependency-plugin.version>
 		<exec-maven-plugin.version>3.0.0</exec-maven-plugin.version>
 		
 		<cora-docker-tomcat.version>2.0.0</cora-docker-tomcat.version>
-		<idplogin.version>3.5-SNAPSHOT</idplogin.version>
+		<idplogin.version>3.6-SNAPSHOT</idplogin.version>
 	</properties>
 
 	<scm>
