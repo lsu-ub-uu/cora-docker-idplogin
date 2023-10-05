@@ -22,7 +22,7 @@
 	<parent>
 		<groupId>se.uu.ub.cora</groupId>
 		<artifactId>cora-parent</artifactId>
-		<version>2.4.0</version>
+		<version>2.5.0</version>
 	</parent>
 
 	<artifactId>cora-docker-idplogin</artifactId>
@@ -36,7 +36,7 @@
 		<exec-maven-plugin.version>3.0.0</exec-maven-plugin.version>
 		
 		<cora-docker-tomcat.version>2.2.0</cora-docker-tomcat.version>
-		<idplogin.version>3.14-SNAPSHOT</idplogin.version>
+		<idplogin.version>3.15-SNAPSHOT</idplogin.version>
 	</properties>
 
 	<scm>
