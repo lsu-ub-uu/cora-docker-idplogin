@@ -33,7 +33,6 @@
 	<properties>
 		<outputDirectory>${project.build.directory}/docker2</outputDirectory>
 		<maven-dependency-plugin.version>3.8.1</maven-dependency-plugin.version>
-		
 		<cora-docker-tomcat.version>2.5.0</cora-docker-tomcat.version>
 		<idplogin.version>3.19-SNAPSHOT</idplogin.version>
 		<!-- Override property so docker-build profile activates in this module -->
@@ -82,6 +81,32 @@
 							<overWriteReleases>true</overWriteReleases>
 							<overWriteSnapshots>true</overWriteSnapshots>
 							<overWriteIfNewer>true</overWriteIfNewer>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>${exec-maven-plugin.version}</version>
+				<executions>
+					<execution>
+						<id>docker-build</id>
+						<phase>install</phase>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>docker</executable>
+							<workingDirectory>${outputDirectory}</workingDirectory>
+							<arguments>
+								<argument>build</argument>
+								<argument>-t</argument>
+								<argument>${project.artifactId}:${project.version}</argument>
+								<argument>--build-arg</argument>
+								<argument>CORA_DOCKER_VERSION=${cora-docker-tomcat.version}</argument>
+								<argument>.</argument>
+							</arguments>
 						</configuration>
 					</execution>
 				</executions>
