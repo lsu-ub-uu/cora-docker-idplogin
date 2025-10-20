@@ -31,8 +31,6 @@
 	<name>idplogin docker</name>
 
 	<properties>
-		<outputDirectory>${project.build.directory}/docker2</outputDirectory>
-		<maven-dependency-plugin.version>3.9.0</maven-dependency-plugin.version>
 		<cora-docker-tomcat.version>2.7.0</cora-docker-tomcat.version>
 		<idplogin.version>3.20.0</idplogin.version>
 		<!-- Override property so docker-build profile activates in this module -->
@@ -68,7 +66,6 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-dependency-plugin</artifactId>
-				<version>${maven-dependency-plugin.version}</version>
 				<executions>
 					<execution>
 						<id>copy-dependencies</id>
@@ -88,7 +85,6 @@
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>exec-maven-plugin</artifactId>
-				<version>${exec-maven-plugin.version}</version>
 				<executions>
 					<execution>
 						<id>docker-build</id>
